@@ -2,7 +2,7 @@ from tests.utils import load_json
 import requests
 from jsonschema import validate
 
-def test_put_create_user():
+def test_put_update():
     url = "https://reqres.in/api"
     user_id = 2
 

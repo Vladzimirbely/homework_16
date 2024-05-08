@@ -2,7 +2,7 @@ from tests.utils import load_json
 import requests
 from jsonschema import validate
 
-def test_post_create_user():
+def test_post_create():
     url = "https://reqres.in/api/users"
     payload = {
         "name": "name",

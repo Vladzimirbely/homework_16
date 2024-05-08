@@ -2,7 +2,7 @@ from tests.utils import load_json
 import requests
 from jsonschema import validate
 
-def test_get_list_users():
+def test_get_list():
     url = "https://reqres.in/api"
     page_id = 2
     response = requests.get(f'{url}/users?page={page_id}')
