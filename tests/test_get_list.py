@@ -3,9 +3,9 @@ import requests
 from jsonschema import validate
 
 def test_get_list_users():
-    url = "https://reqres.in/api/"
+    url = "https://reqres.in/api"
     page_id = 2
-    response = requests.get(f'{url}users?page={page_id}')
+    response = requests.get(f'{url}/users?page={page_id}')
 
     assert response.status_code == 200
     assert response.json()['total'] == 12
