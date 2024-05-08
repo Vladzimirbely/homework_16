@@ -6,3 +6,4 @@ def test_not_found():
     response = requests.get(f'{url}/users/{user_id}')
 
     assert response.status_code == 404
+    assert response.json() == {}
